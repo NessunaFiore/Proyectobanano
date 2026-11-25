@@ -8,6 +8,7 @@ from modelo_ia import DetectorBananos
 st.set_page_config(page_title="Control de Calidad de Bananos", page_icon="🍌", layout="wide")
 
 st.title("🍌 Control de Calidad de Bananos")
+st.write("Integrantes: Abraham Ariza, Isac Cruz y Juan Suárez Brango")
 st.write("Sube una imagen para detectar y clasificar bananos (maduros, verdes, podridos).")
 
 # --- Función copiada de ventana.py para evitar importar PySide6 ---
