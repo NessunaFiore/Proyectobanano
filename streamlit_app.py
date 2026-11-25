@@ -3,28 +3,59 @@ import cv2
 import numpy as np
 from PIL import Image
 from modelo_ia import DetectorBananos
-from ventana import resumen_clasificacion
 
-# Configuración de la página
+# --- Configuración de la página ---
 st.set_page_config(page_title="Control de Calidad de Bananos", page_icon="🍌", layout="wide")
 
 st.title("🍌 Control de Calidad de Bananos")
 st.write("Sube una imagen para detectar y clasificar bananos (maduros, verdes, podridos).")
 
-# Cargar el modelo (se guarda en caché para no recargarlo cada vez)
+# --- Función copiada de ventana.py para evitar importar PySide6 ---
+def resumen_clasificacion(conteos):
+    total = sum(conteos.values())
+    if total == 0:
+        return "No se detectaron plátanos en la imagen."
+
+    nombres = {1: "maduros", 2: "verdes", 3: "podridos"}
+    mayor = max(conteos.values())
+    dominantes = [
+        nombres[clase] for clase, cantidad in conteos.items()
+        if cantidad == mayor
+    ]
+    if len(dominantes) > 1:
+        return (
+            "La muestra presenta un empate entre plátanos "
+            f"{', '.join(dominantes)}."
+        )
+    if mayor > total / 2:
+        return (
+            "En la imagen, la muestra corresponde en su mayoría "
+            f"a plátanos {dominantes[0]}."
+        )
+    return (
+        "En la imagen, el tipo de plátano más frecuente es: "
+        f"{dominantes[0]}."
+    )
+
+# --- Carga del modelo (con caché) ---
 @st.cache_resource
 def cargar_modelo():
-    return DetectorBananos()
+    print("Cargando modelo...")
+    detector = DetectorBananos()
+    print("Modelo cargado exitosamente.")
+    return detector
 
-detector = cargar_modelo()
+# Mostrar un spinner mientras carga el modelo la primera vez
+with st.spinner("Cargando modelos de Inteligencia Artificial (esto puede tardar unos minutos la primera vez)..."):
+    detector = cargar_modelo()
 
-# Componente para subir imagen
+# --- Interfaz de usuario ---
 archivo_subido = st.file_uploader("Elige una imagen...", type=["jpg", "jpeg", "png"])
 
 if archivo_subido is not None:
     # Leer la imagen
     imagen = Image.open(archivo_subido).convert("RGB")
-    st.image(imagen, caption="Imagen original", use_column_width=True)
+    st.image(imagen, caption="Imagen original", use_container_width=True)
     
     # Guardar temporalmente para tu función procesar_imagen
     ruta_temp = "temp_image.jpg"
@@ -38,7 +69,7 @@ if archivo_subido is not None:
         else:
             # Mostrar resultado
             img_resultado = cv2.cvtColor(resultado["imagen"], cv2.COLOR_BGR2RGB)
-            st.image(img_resultado, caption="Resultado del análisis", use_column_width=True)
+            st.image(img_resultado, caption="Resultado del análisis", use_container_width=True)
             
             # Mostrar resumen
             texto_resumen = resumen_clasificacion(resultado["conteos"])
