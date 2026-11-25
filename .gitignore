@@ -1,24 +1,9 @@
-# Entornos virtuales
 .venv/
-venv/
-env/
-
-# Archivos de compilación de PyInstaller
 build/
 dist/
+__pycache__/
 *.spec
 *.iss
-
-# Caché de Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Archivos de modelos pesados (los manejaremos en Hugging Face)
 *.pth
 *.pt
-
-# Archivos de sistema
-.DS_Store
-Thumbs.db
+Muestra/
