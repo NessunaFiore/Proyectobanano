@@ -157,15 +157,22 @@ class DetectorBananos:
         return model
 
     def procesar_imagen(self, ruta_imagen, umbral=0.3):
-        # A. Filtro YOLO
-        # resultados_yolo = self.yolo(ruta_imagen, verbose=False)
-        #hay_banano = any(int(cls) == 46 for r in resultados_yolo for cls in r.boxes.cls)
-        
-        #if not hay_banano:
-         #   return {"error": "YOLO no detectó bananos en la imagen.", "imagen": None, "conteos": None}
-
-        # B. Tu modelo Mask R-CNN
         img = Image.open(ruta_imagen).convert("RGB")
+        
+        # --- NUEVA LÓGICA PARA IMÁGENES DE BAJA RESOLUCIÓN ---
+        ancho, alto = img.size
+        min_dim = 800  # Tamaño mínimo del lado más corto
+        
+        if ancho < min_dim or alto < min_dim:
+            escala = min_dim / min(ancho, alto)
+            nuevo_ancho = int(ancho * escala)
+            nuevo_alto = int(alto * escala)
+            
+            # Redimensionamos con interpolación de alta calidad
+            img = img.resize((nuevo_ancho, nuevo_alto), Image.Resampling.LANCZOS)
+            print(f"Imagen redimensionada de {ancho}x{alto} a {nuevo_ancho}x{nuevo_alto} para mejorar la detección.")
+        # -----------------------------------------------------
+
         img_tensor = F.to_tensor(img).to(self.device)
         img_np = np.array(img)
         
