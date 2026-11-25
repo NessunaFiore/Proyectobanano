@@ -55,7 +55,8 @@ archivo_subido = st.file_uploader("Elige una imagen...", type=["jpg", "jpeg", "p
 if archivo_subido is not None:
     # Leer la imagen
     imagen = Image.open(archivo_subido).convert("RGB")
-    st.image(imagen, caption="Imagen original", use_container_width=True)
+    
+    # (Se eliminó la línea que mostraba la imagen original aquí)
     
     # Guardar temporalmente para tu función procesar_imagen
     ruta_temp = "temp_image.jpg"
@@ -67,17 +68,12 @@ if archivo_subido is not None:
         if resultado["error"]:
             st.error(resultado["error"])
         else:
-            # Mostrar resultado
+            # Mostrar SOLO la imagen procesada
             img_resultado = cv2.cvtColor(resultado["imagen"], cv2.COLOR_BGR2RGB)
             st.image(img_resultado, caption="Resultado del análisis", use_container_width=True)
             
-            # Mostrar resumen
+            # Mostrar resumen (texto verde)
             texto_resumen = resumen_clasificacion(resultado["conteos"])
             st.success(texto_resumen)
             
-            # Mostrar conteos detallados
-            st.write("**Conteo detallado:**")
-            col1, col2, col3 = st.columns(3)
-            col1.metric("Maduros", resultado["conteos"].get(1, 0))
-            col2.metric("Verdes", resultado["conteos"].get(2, 0))
-            col3.metric("Podridos", resultado["conteos"].get(3, 0))
+            
