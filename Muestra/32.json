@@ -1,0 +1,136 @@
+{
+  "version": "7.11.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "banana_fresh",
+      "points": [
+        [
+          393.98205276564244,
+          548.0256378499028
+        ],
+        [
+          97.8846185840532,
+          271.55897278532495
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_fresh",
+      "points": [
+        [
+          191.13077188985756,
+          117.78461470206865
+        ],
+        [
+          472.5051292336882,
+          461.32307424976887
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_fresh",
+      "points": [
+        [
+          465.96153952801774,
+          22.902563969846682
+        ],
+        [
+          577.2025645244158,
+          435.1487154270869
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_fresh",
+      "points": [
+        [
+          555.9358979809869,
+          35.989743381187644
+        ],
+        [
+          719.5256406227488,
+          492.40512535170365
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_fresh",
+      "points": [
+        [
+          979.6333314231505,
+          341.9025621212826
+        ],
+        [
+          629.5512821697797,
+          503.856407336627
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_fresh",
+      "points": [
+        [
+          960.0025623061389,
+          536.5743558649793
+        ],
+        [
+          670.4487178302202,
+          673.9897396840595
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_fresh",
+      "points": [
+        [
+          614.8282053320212,
+          667.446149978389
+        ],
+        [
+          881.4794858380932,
+          862.1179437220858
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "32.jpg",
+  "imageData": null,
+  "imageHeight": 957,
+  "imageWidth": 1300
+}

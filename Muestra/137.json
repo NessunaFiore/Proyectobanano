@@ -1,0 +1,64 @@
+{
+  "version": "7.11.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "banana_rotten",
+      "points": [
+        [
+          166.12222532118028,
+          407.4222202303802
+        ],
+        [
+          1046.233332129526,
+          858.3555513591506
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_rotten",
+      "points": [
+        [
+          415.32222410286914,
+          354.0222204914469
+        ],
+        [
+          1475.4111078091012,
+          804.9555516202173
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_rotten",
+      "points": [
+        [
+          221.50000282822225,
+          243.26666547736295
+        ],
+        [
+          1133.2555539263062,
+          448.9555533606617
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "137.jpg",
+  "imageData": null,
+  "imageHeight": 1157,
+  "imageWidth": 1600
+}

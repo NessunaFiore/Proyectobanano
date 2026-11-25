@@ -1,0 +1,154 @@
+{
+  "version": "7.11.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "banana_rotten",
+      "points": [
+        [
+          575.6444449071012,
+          132.36922994559998
+        ],
+        [
+          425.299146697284,
+          872.6564048265482
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_rotten",
+      "points": [
+        [
+          577.2786329311209,
+          232.05469941080491
+        ],
+        [
+          704.7452988046617,
+          867.7538407544888
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_rotten",
+      "points": [
+        [
+          652.4512820360296,
+          171.58974252207406
+        ],
+        [
+          843.6512808463407,
+          884.0957209946864
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_rotten",
+      "points": [
+        [
+          1087.145296425284,
+          578.5025605029925
+        ],
+        [
+          884.5059814468345,
+          6.536752096079012
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_rotten",
+      "points": [
+        [
+          1087.145296425284,
+          13.073504192158024
+        ],
+        [
+          1263.6376030194172,
+          714.1401664966321
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_rotten",
+      "points": [
+        [
+          457.982907177679,
+          585.0393125990715
+        ],
+        [
+          307.63760896786175,
+          9.805128144118518
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_rotten",
+      "points": [
+        [
+          155.65812273402474,
+          117.66153772942222
+        ],
+        [
+          361.5658137605136,
+          802.3863197936987
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_rotten",
+      "points": [
+        [
+          29.825644884503717,
+          120.92991377746172
+        ],
+        [
+          265.14872034334815,
+          808.9230718897777
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "228.jpg",
+  "imageData": null,
+  "imageHeight": 956,
+  "imageWidth": 1300
+}

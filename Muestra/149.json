@@ -1,0 +1,28 @@
+{
+  "version": "7.11.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "banana_rotten",
+      "points": [
+        [
+          99.22564158091677,
+          391.59999927704615
+        ],
+        [
+          718.117948130654,
+          42.90256402335937
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "149.jpg",
+  "imageData": null,
+  "imageHeight": 534,
+  "imageWidth": 800
+}

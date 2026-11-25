@@ -1,0 +1,46 @@
+{
+  "version": "7.11.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "banana_fresh",
+      "points": [
+        [
+          378.8034188034188,
+          522.3931623931624
+        ],
+        [
+          645.4700854700855,
+          408.88888888888886
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "circle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_fresh",
+      "points": [
+        [
+          548.3760683760684,
+          246.15384615384613
+        ],
+        [
+          314.52991452991455,
+          451.2820512820512
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "circle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "16.jpg",
+  "imageData": null,
+  "imageHeight": 800,
+  "imageWidth": 800
+}

@@ -1,0 +1,118 @@
+{
+  "version": "7.11.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "banana_unripe",
+      "points": [
+        [
+          646.4898989940356,
+          638.838383085544
+        ],
+        [
+          1006.860268939727,
+          1127.9124565832683
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_unripe",
+      "points": [
+        [
+          969.4191915427722,
+          858.8047127926544
+        ],
+        [
+          1300.0,
+          1355.8318024311436
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_unripe",
+      "points": [
+        [
+          1058.3417503605401,
+          535.8754202439179
+        ],
+        [
+          1300.0,
+          1050.7125607801586
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_unripe",
+      "points": [
+        [
+          873.476430713075,
+          32.76094272233559
+        ],
+        [
+          613.7289562717,
+          657.5589217840215
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_unripe",
+      "points": [
+        [
+          314.20033709606025,
+          374.4107739695496
+        ],
+        [
+          782.2138045579974,
+          1085.7912445116938
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "banana_unripe",
+      "points": [
+        [
+          251.01851898869882,
+          905.6060595388481
+        ],
+        [
+          726.0521884625649,
+          1301.077439544185
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "banana_Unripe_4.jpg",
+  "imageData": null,
+  "imageHeight": 1390,
+  "imageWidth": 1300
+}

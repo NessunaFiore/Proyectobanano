@@ -1,0 +1,28 @@
+{
+  "version": "7.11.0",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "banana_fresh",
+      "points": [
+        [
+          268.09743614094833,
+          118.66666644758975
+        ],
+        [
+          540.1179484592694,
+          495.66153754647104
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "85.jpg",
+  "imageData": null,
+  "imageHeight": 534,
+  "imageWidth": 800
+}
